@@ -1,0 +1,150 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid var(--color);
+  margin: auto;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: "Roboto Slab", serif;
+  margin: 0 5px;
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+
+.title img {
+  content: url("../../images/apple.png");
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.links {
+  display: flex;
+}
+
+.menu {
+  margin-right: 10px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.menu a:hover {
+  color: var(--color);
+  transition: 200ms;
+  border-bottom: 1px solid var(--color);
+}
+
+.menu i {
+  margin-right: 3px;
+  cursor: pointer;
+  color: var(--color);
+}
+
+.menu a {
+  color: var(--grey);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.dropDown a,
+.dropDown li {
+  transition: 650ms;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 15px 0 0px 0;
+  transition: 400ms;
+  text-decoration: none;
+}
+
+.dropDown a:hover {
+  border-bottom: 1.5px solid var(--white);
+  color: var(--white);
+}
+
+.dropDown {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  background-color: var(--color);
+  margin: 2.3rem 0 0 0;
+  border: 10px solid var(--color) transparent;
+  transition: 700ms;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  z-index: 2;
+}
+
+.dropDown:after {
+  content: "";
+  position: absolute;
+  right: 230px;
+  top: -19px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-bottom-color: var(--color);
+}
+
+.dropDown ul {
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hoverWrapper {
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title img {
+    width: 30px;
+    margin-bottom: 5px;
+  }
+  .menu {
+    display: none;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .menu a {
+    font-size: 1.1rem;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+  .title img {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+}

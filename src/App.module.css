@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+:root {
+  --grey: #7f888f;
+  --dark: #3d4449;
+  --white: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --color: #f56a6a;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+  background-color: var(--light);
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  background-color: var(--white);
+  margin: 0;
+}
