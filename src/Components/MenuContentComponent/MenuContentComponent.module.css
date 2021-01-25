@@ -1,7 +1,7 @@
 #MenuContent {
   display: flex;
   flex-direction: row;
-  padding: 4rem 0 0 0 !important;
+  padding: 4rem 0 1rem 0 !important;
   margin: auto;
 }
 

@@ -31,31 +31,3 @@ function test({saveText, saveSpecial}) {
 }
 
 export default test;
-
-/*function test({saveText, saveSpecial}) {
-    return (
-        <div id={styles.home}>
-            <div className={styles.content}>
-                <div className={styles.title}>
-                    <h1>{saveText.title}</h1>  
-                    <h3>{saveText.text_1}</h3>
-                </div>
-                <div className={styles.text}>
-                    <p>{saveText.text_2}</p>
-                    <p>{saveText.text_3}</p>
-                </div>
-                <div className={styles.special}>
-                    { saveSpecial ?
-                        <ul>
-                        {saveSpecial.map((special, index) => {
-                            return (<li key={index}>{special}</li>)
-                        })}
-                    </ul> : null}
-                </div>
-            </div>
-                <div className={styles.image}>
-                    <img src={saveText.src} alt="lecture"/>
-                </div>
-        </div>
-    );
-}*/

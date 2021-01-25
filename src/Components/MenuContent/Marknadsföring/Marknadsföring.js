@@ -6,6 +6,8 @@ function Utbildning({changeHeading}) {
 
     useEffect(() => {
         handleHeading();
+        getText();
+
     });   
     
     const handleHeading = () => {
@@ -13,10 +15,6 @@ function Utbildning({changeHeading}) {
     }
 
     const [ saveText, SetSaveText ] = useState([]);
-
-    useEffect(() => {
-        getText();
-    });
 
     const getText = () => {
         SetSaveText(textContent[0].Marknadsföring);

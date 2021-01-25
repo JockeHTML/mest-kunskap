@@ -86,11 +86,11 @@
   position: absolute;
   background-color: var(--color);
   margin: 2.3rem 0 0 0;
-  border: 10px solid var(--color) transparent;
-  transition: 700ms;
+  transition: 600ms;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
   z-index: 2;
+  padding: 5px;
 }
 
 .dropDown:after {
@@ -132,7 +132,7 @@
     display: none;
   }
   .title h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 

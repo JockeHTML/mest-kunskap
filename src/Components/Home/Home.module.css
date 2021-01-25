@@ -1,6 +1,6 @@
 #home {
   display: flex;
-  padding: 4rem 0 0 0 !important;
+  padding: 4rem 0 1rem 0;
   margin: auto;
   flex-direction: row;
 }

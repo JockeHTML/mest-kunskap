@@ -14,14 +14,13 @@ function Utbildning({changeHeading}) {
     }
 
     const [ saveSpecial, setSaveSpecial ] = useState([]);
+    
     const [ saveText, SetSaveText ] = useState([]);
 
     const getText = () => {
         SetSaveText(textContent[0].Starta);
         setSaveSpecial(saveText.special);
     }
-
-
 
     return (
         <MenuContentComponent saveSpecial={saveSpecial} saveText={saveText}/>

@@ -13,7 +13,7 @@
 .secondMenu li {
   margin: 0 0 0 1.7rem;
   list-style: none;
-  padding-top: 3px;
+  padding-top: 4px;
   padding-bottom: 7px;
 }
 
@@ -28,10 +28,10 @@
 .mainMenu a {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: var(--white);
-  padding-left: 0.5rem;
+  padding-left: 0.7rem;
 }
 
 .mainMenu li {
@@ -45,6 +45,7 @@
 .mainMenu i {
   padding: 5px 0px;
   margin-top: 3px;
+  font-size: 1.7rem;
 }
 
 .mainMenu ul,
@@ -54,16 +55,16 @@
 }
 
 .closeIcon i {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--white);
 }
 
 .expandHamburger {
   transition: 450ms;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--color);
   position: fixed;
   display: absolute;
