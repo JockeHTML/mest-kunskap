@@ -42,9 +42,7 @@ function Hamburger(props) {
                 { dropActive ? 
                 <div className={styles.secondMenu}>
                     <ul>
-                        <li>
-                            {menuContent.map((content, index) => { return <li key={index}><Link onClick={handleDrop} to={`${content.router}`} >{content.title}</Link></li>})}
-                        </li>
+                        {menuContent.map((content, index) => { return <li key={index}><Link onClick={handleDrop} to={content.router} >{content.title}</Link></li>})}
                     </ul>
                 </div> : null }
         </div>  
