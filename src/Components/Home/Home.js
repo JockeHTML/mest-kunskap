@@ -9,10 +9,11 @@ import {
 
 function Home({changeHeading}) {
 
+    /* useEffect hook render right heading */
     useEffect(() => {
         handleHeading();
     });   
-
+    
     const handleHeading = () => {
         changeHeading("Mest Kunskap");
     }

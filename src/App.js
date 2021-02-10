@@ -14,7 +14,6 @@ import Enkät from "./Components/MenuContent/Enkät/Enkät";
 import Starta from "./Components/MenuContent/Starta/Starta";
 import Hamburger from "./Components/Nav/Hamburger";
 
-
 import {
   Switch,
   Route,
@@ -22,8 +21,8 @@ import {
 
 function App() {
 
+  /* state used with useState hook to change headings depending on what page your on */
   const [ defaultHeading, SetDefaultHeading ] = useState("Mest Kunskap");
-
   const changeHeading = (heading) => {
     SetDefaultHeading(heading);
   };

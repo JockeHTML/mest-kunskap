@@ -11,6 +11,7 @@ import {
 
 function Nav({defaultHeading}) {
 
+    /* useState hook used for showing data on hover or not */
     const [ onHover, setOnHover ] = useState();
 
     return (

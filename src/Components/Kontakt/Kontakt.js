@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 
 function Kontakt({changeHeading}) {
 
+    /* useEffect hook render right heading */
      useEffect(() => {
         handleHeading();
     });
@@ -14,6 +15,7 @@ function Kontakt({changeHeading}) {
         changeHeading("Kontakter");
     }
 
+    /* Contact form */
     return (
         <Grid xs={11} md={11} lg={9} container item id={styles.kontakt}>
             <Grid item xs={12} md={6} lg={6} className={styles.info}>

@@ -8,14 +8,15 @@ import {
 
 function Hamburger(props) {
 
+    /* useState hook used for activate dropdown menu or not */
     const [ active, setActive ] = useState(false);
     const [ dropActive, setDropActive ] = useState(false);
-
     const handleDrop = () => {
         setDropActive(false);
         setActive(!active);
     }
 
+    /* render different data depending on dropdown is active or not */
     return (
         <div className={styles.wrapper}>
         <div className={active ? styles.expandHamburger : styles.hamburger}>
