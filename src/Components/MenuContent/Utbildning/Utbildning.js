@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import {textContent} from "../../Context/Context";
+import React, { useEffect, useContext } from 'react';
+import {textContent} from "../../Data/Data";
 import MenuContentComponent from "../../MenuContentComponent/MenuContentComponent";
+import {HeadingContext} from "../../Context/Context";
+import {TextContext} from "../../Context/TextContext";
 
-function Utbildning({changeHeading}) {
+function Utbildning () {
+
+    const { setDefaultHeading } = useContext(HeadingContext);
+    const { saveText, setSaveText } = useContext(TextContext);
 
     /* Getting text for this page, setting right heading */
     useEffect(() => {
-        handleHeading();
+        setDefaultHeading("Mest Kunskap")
         getText();
     });
 
-    const handleHeading = () => {
-        changeHeading("Mest Kunskap");
-    }
-
-    /* getting the right data from context file then setting the right state with the useState hook */
-    const [ saveText, SetSaveText ] = useState([]);
+    /* getting the right data from Data file then setting the right state with the useState hook */
     const getText = () => {
-        SetSaveText(textContent[0].Utbildning);
+        setSaveText(textContent[0].Utbildning);
     }
 
     return (

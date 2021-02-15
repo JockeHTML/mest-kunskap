@@ -1,22 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
 import styles from "./Om.module.css";
-import { om } from "../Context/Context";
+import { om } from "../Data/Data";
 import Grid from '@material-ui/core/Grid';
+import { HeadingContext } from "../Context/Context";
 
 import {
     Link
   } from "react-router-dom";
 
-function Home({changeHeading}) {
+function Home() {
+
+    const { setDefaultHeading } = useContext(HeadingContext);
 
     /* useEffect hook render right heading */
     useEffect(() => {
-        handleHeading();
+        setDefaultHeading("Om oss");
     });
-
-    const handleHeading = () => {
-        changeHeading("Om oss");
-    }
 
     return (
         <Grid xs={11} md={11} lg={11} container item id={styles.om}>

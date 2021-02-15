@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from './Nav.module.css';
-import {menuContent, links} from "../Context/Context";
+import {menuContent, links} from "../Data/Data";
 import Social from "./Social";
 import Grid from '@material-ui/core/Grid';
-
+import {HeadingContext} from "../Context/Context";
 
 import {
     Link
   } from "react-router-dom";
 
-function Nav({defaultHeading}) {
+function Nav() {
 
     /* useState hook used for showing data on hover or not */
     const [ onHover, setOnHover ] = useState();
+    const { defaultHeading } = useContext(HeadingContext);
 
     return (
     <Grid container item xs={11} md={11} lg={11} id={styles.header}>

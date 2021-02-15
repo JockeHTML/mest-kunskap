@@ -1,19 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import cx from 'classnames';
 import styles from "./Kontakt.module.css";
-import {kontaker} from "../Context/Context";
+import {kontaker} from "../Data/Data";
 import Grid from '@material-ui/core/Grid';
+import { HeadingContext } from "../Context/Context";
 
 function Kontakt({changeHeading}) {
 
+    const { setDefaultHeading } = useContext(HeadingContext);
+
     /* useEffect hook render right heading */
      useEffect(() => {
-        handleHeading();
+        setDefaultHeading("Kontakt")
     });
-
-    const handleHeading = () => {
-        changeHeading("Kontakter");
-    }
 
     /* Contact form */
     return (

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from './App.module.css';
 import Nav from "./Components/Nav/Nav"
 import Om from './Components/Om/Om';
@@ -13,6 +13,9 @@ import Marknadsföring from "./Components/MenuContent/Marknadsföring/Marknadsf�
 import Enkät from "./Components/MenuContent/Enkät/Enkät";
 import Starta from "./Components/MenuContent/Starta/Starta";
 import Hamburger from "./Components/Nav/Hamburger";
+import {HeadingProvider} from "./Components/Context/Context";
+import {TextProvider} from "./Components/Context/TextContext";
+
 
 import {
   Switch,
@@ -21,14 +24,57 @@ import {
 
 function App() {
 
-  /* state used with useState hook to change headings depending on what page your on */
-  const [ defaultHeading, SetDefaultHeading ] = useState("Mest Kunskap");
-  const changeHeading = (heading) => {
-    SetDefaultHeading(heading);
-  };
-
   return (
-    
+  <TextProvider>
+  <HeadingProvider>
+    <div className={styles.App}>
+      <Hamburger />
+      <Nav de />
+      <Switch>
+          <Route path="/om">
+            <Om  />
+          </Route>
+          <Route path="/utbildning">
+            <Utbildning  />
+          </Route>
+          <Route path="/kontakt">
+            <Kontakt />
+          </Route>
+          <Route path="/applåder">
+            <Applåder  />
+          </Route>
+          <Route path="/kundservice">
+            <Kundservice  />
+          </Route>
+          <Route path="/hälsa">
+            <Hälsa  />
+          </Route>
+          <Route path="/marknadsföring">
+            <Marknadsföring  />
+          </Route>
+          <Route path="/enkät">
+            <Enkät  />
+          </Route>
+          <Route path="/starta">
+            <Starta  />
+          </Route>
+          <Route path="/betalt">
+            <Betalt  />
+          </Route>
+          <Route path="/">
+            <Home  />
+          </Route>
+      </Switch>
+    </div>
+  </HeadingProvider>
+  </TextProvider>
+  );
+}
+
+export default App;
+
+/*return (
+  <HeadingProvider>
     <div className={styles.App}>
       <Hamburger />
       <Nav defaultHeading={defaultHeading} />
@@ -67,9 +113,6 @@ function App() {
             <Home changeHeading={changeHeading} />
           </Route>
       </Switch>
-      </div>
-  
-  );
-}
-
-export default App;
+    </div>
+  </HeadingProvider>
+  );*/

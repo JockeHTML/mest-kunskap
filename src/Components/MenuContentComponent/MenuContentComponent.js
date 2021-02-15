@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from "./MenuContentComponent.module.css"
 import Grid from '@material-ui/core/Grid';
+import {TextContext} from "../Context/TextContext";
 
-function test({saveText, saveSpecial}) {
+function MenuContentComponent ({StartaEgetList}) {
+
+    const { saveText } = useContext(TextContext);
+
     return (
         <Grid xs={11} md={11} lg={11} container item id={styles.MenuContent}>
             <Grid item xs={12} md={12} lg={6} className={styles.content}>
@@ -15,9 +19,9 @@ function test({saveText, saveSpecial}) {
                     <p>{saveText.text_3}</p>
                 </div>
                 <div className={styles.special}>
-                    { saveSpecial ?
+                    { StartaEgetList ?
                         <ul>
-                        {saveSpecial.map((special, index) => {
+                        {StartaEgetList.map((special, index) => {
                             return (<li key={index}>{special}</li>)
                         })}
                     </ul> : null}
@@ -30,4 +34,4 @@ function test({saveText, saveSpecial}) {
     );
 }
 
-export default test;
+export default MenuContentComponent;

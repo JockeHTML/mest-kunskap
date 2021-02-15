@@ -1,22 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import styles from "./Home.module.css"
-import { home } from "../Context/Context";
+import { home } from "../Data/Data";
 import Grid from '@material-ui/core/Grid';
+import {HeadingContext} from "../Context/Context";
 
 import {
     Link
   } from "react-router-dom";
 
-function Home({changeHeading}) {
+function Home() {
+
+    const { setDefaultHeading } = useContext(HeadingContext);
 
     /* useEffect hook render right heading */
     useEffect(() => {
-        handleHeading();
+        setDefaultHeading("Mest Kunskap");
     });   
-    
-    const handleHeading = () => {
-        changeHeading("Mest Kunskap");
-    }
     
     return (
         <Grid xs={11} md={11} lg={11} container item id={styles.home}>

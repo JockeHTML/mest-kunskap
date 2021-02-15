@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styles from './Hamburger.module.css';
-import {menuContent, links} from "../Context/Context";
+import {menuContent, links} from "../Data/Data";
 
 import {
     Link
