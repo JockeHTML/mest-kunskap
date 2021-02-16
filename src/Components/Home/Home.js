@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import styles from "./Home.module.css"
 import { home } from "../Data/Data";
 import Grid from '@material-ui/core/Grid';
-import {HeadingContext} from "../Context/Context";
+import {AppContext} from "../Context/Context";
 
 import {
     Link
@@ -10,7 +10,7 @@ import {
 
 function Home() {
 
-    const { setDefaultHeading } = useContext(HeadingContext);
+    const { setDefaultHeading } = useContext(AppContext);
 
     /* useEffect hook render right heading */
     useEffect(() => {

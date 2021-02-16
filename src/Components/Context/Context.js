@@ -1,16 +1,17 @@
 import { createContext, useState } from 'react';
 
-export const HeadingContext = createContext();
+export const AppContext = createContext();
 
-export const HeadingProvider = ({ children }) => {
+export const AppProvider = ({ children }) => {
 
-    /* state used with useState hook to change headings depending on what page your on */
+    /* state used with useState hook to change headings depending on what page your on and what text the page will render*/
     const [ defaultHeading, setDefaultHeading ] = useState("Mest Kunskap");
+    const [ saveText, setSaveText ] = useState([]);
     
     return (
-    <HeadingContext.Provider value={{ defaultHeading, setDefaultHeading  }}>
+    <AppContext.Provider value={{ defaultHeading, setDefaultHeading, saveText, setSaveText  }}>
         { children }
-    </HeadingContext.Provider>
+    </AppContext.Provider>
     )
 }
 

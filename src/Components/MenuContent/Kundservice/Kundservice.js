@@ -1,15 +1,13 @@
 import React, { useEffect, useContext } from 'react';
 import {textContent} from "../../Data/Data";
 import MenuContentComponent from "../../MenuContentComponent/MenuContentComponent";
-import {HeadingContext} from "../../Context/Context";
-import {TextContext} from "../../Context/TextContext";
+import {AppContext} from "../../Context/Context";
 
 function Utbildning () {
 
     /* Getting text for this page, setting right heading */
-
-    const { setDefaultHeading } = useContext(HeadingContext);
-    const { saveText, setSaveText } = useContext(TextContext);
+   
+    const { setDefaultHeading, saveText, setSaveText } = useContext(AppContext);
 
     useEffect(() => {
         setDefaultHeading("Mest Kunskap");

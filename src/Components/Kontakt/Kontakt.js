@@ -3,15 +3,15 @@ import cx from 'classnames';
 import styles from "./Kontakt.module.css";
 import {kontaker} from "../Data/Data";
 import Grid from '@material-ui/core/Grid';
-import { HeadingContext } from "../Context/Context";
+import { AppContext } from "../Context/Context";
 
-function Kontakt({changeHeading}) {
+function Kontakt () {
 
-    const { setDefaultHeading } = useContext(HeadingContext);
+    const { setDefaultHeading } = useContext(AppContext);
 
     /* useEffect hook render right heading */
      useEffect(() => {
-        setDefaultHeading("Kontakt")
+        setDefaultHeading("Kontakt");
     });
 
     /* Contact form */

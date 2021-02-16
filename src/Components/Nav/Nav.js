@@ -3,7 +3,7 @@ import styles from './Nav.module.css';
 import {menuContent, links} from "../Data/Data";
 import Social from "./Social";
 import Grid from '@material-ui/core/Grid';
-import {HeadingContext} from "../Context/Context";
+import {AppContext} from "../Context/Context";
 
 import {
     Link
@@ -13,7 +13,7 @@ function Nav() {
 
     /* useState hook used for showing data on hover or not */
     const [ onHover, setOnHover ] = useState();
-    const { defaultHeading } = useContext(HeadingContext);
+    const { defaultHeading } = useContext(AppContext);
 
     return (
     <Grid container item xs={11} md={11} lg={11} id={styles.header}>

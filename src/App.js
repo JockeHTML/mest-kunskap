@@ -13,9 +13,7 @@ import Marknadsföring from "./Components/MenuContent/Marknadsföring/Marknadsf�
 import Enkät from "./Components/MenuContent/Enkät/Enkät";
 import Starta from "./Components/MenuContent/Starta/Starta";
 import Hamburger from "./Components/Nav/Hamburger";
-import {HeadingProvider} from "./Components/Context/Context";
-import {TextProvider} from "./Components/Context/TextContext";
-
+import {AppProvider} from "./Components/Context/Context";
 
 import {
   Switch,
@@ -25,8 +23,7 @@ import {
 function App() {
 
   return (
-  <TextProvider>
-  <HeadingProvider>
+  <AppProvider>
     <div className={styles.App}>
       <Hamburger />
       <Nav de />
@@ -66,8 +63,7 @@ function App() {
           </Route>
       </Switch>
     </div>
-  </HeadingProvider>
-  </TextProvider>
+  </AppProvider>
   );
 }
 

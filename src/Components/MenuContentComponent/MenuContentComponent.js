@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import styles from "./MenuContentComponent.module.css"
 import Grid from '@material-ui/core/Grid';
-import {TextContext} from "../Context/TextContext";
+import { AppContext } from "../Context/Context";
 
 function MenuContentComponent ({StartaEgetList}) {
 
-    const { saveText } = useContext(TextContext);
+    const { saveText } = useContext(AppContext);
 
     return (
         <Grid xs={11} md={11} lg={11} container item id={styles.MenuContent}>
