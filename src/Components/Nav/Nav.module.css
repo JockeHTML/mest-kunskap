@@ -3,21 +3,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 5px solid var(--color);
   margin: auto;
-  padding: 0;
+  padding: 1.5rem 0;
 }
 
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  text-decoration: none;
 }
 
 .title h1 {
-  font-family: "Roboto Slab", serif;
   margin: 0 5px;
-  font-size: 2.5rem;
+  font-weight: 400;
+  font-size: 2rem;
   color: var(--dark);
 }
 
@@ -41,14 +42,12 @@
 }
 
 .menu li {
-  margin-right: 1rem;
+  margin-left: 2rem;
   list-style: none;
 }
 
 .menu a:hover {
   color: var(--color);
-  transition: 200ms;
-  border-bottom: 1px solid var(--color);
 }
 
 .menu i {
@@ -58,21 +57,21 @@
 }
 
 .menu a {
-  color: var(--grey);
+  font-size: 18px;
+  color: var(--dark);
+  font-weight: 500;
   text-decoration: none;
-  font-size: 1.6rem;
 }
 
 .dropDown a,
 .dropDown li {
-  transition: 650ms;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  transition: 400ms;
+  font-weight: 400;
   color: var(--white);
   font-size: 1.1rem;
   padding: 15px 0 0px 0;
-  transition: 400ms;
   text-decoration: none;
+  margin-left: 0;
 }
 
 .dropDown a:hover {
@@ -85,8 +84,8 @@
   height: auto;
   position: absolute;
   background-color: var(--color);
-  margin: 2.3rem 0 0 0;
-  transition: 600ms;
+  margin: 1.5rem 0 0 0;
+  transition: 400ms;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
   z-index: 2;

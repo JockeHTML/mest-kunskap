@@ -1,34 +1,20 @@
-.wrapper {
-  padding-bottom: 3.5rem;
-}
-
 .secondMenu a {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: var(--white);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 
 .secondMenu li {
-  margin: 0 0 0 3.5rem;
-  list-style: none;
-  padding-top: 4px;
+  margin: 0 0 0 2.5rem;
+  padding-top: 5px;
   padding-bottom: 7px;
-}
-
-.secondMenu a:hover {
-  border-bottom: 1px solid var(--white);
-}
-
-.mainMenu a:hover {
-  border-bottom: 1px solid var(--white);
+  color: white;
 }
 
 .mainMenu a {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-weight: 400;
+  font-size: 22px;
   text-decoration: none;
   color: var(--white);
   padding-left: 0.7rem;
@@ -37,32 +23,38 @@
 .mainMenu li {
   list-style: none;
   color: var(--white);
-  padding: 1.7rem 0 0 1rem;
+  padding: 1rem 0 0 1rem;
   align-items: center;
-  font-size: 1.8rem;
 }
 
 .mainMenu i {
-  padding: 5px 0px;
+  padding: 4px 0px;
   margin-top: 3px;
   font-size: 1.7rem;
 }
 
-.mainMenu ul,
+.mainMenu ul {
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
 .secondMenu ul {
   padding: 0;
   margin: 0;
 }
 
 .closeIcon i {
-  padding: 2rem 2rem 0 2rem;
   cursor: pointer;
+  right: 0;
+  top: 0;
+  padding: 2rem 1.5rem;
+  position: absolute;
   font-size: 1.8rem;
   color: var(--white);
 }
 
 .expandHamburger {
-  transition: 450ms;
+  transition: 400ms;
   width: 100%;
   height: 100%;
   background-color: var(--color);
@@ -74,12 +66,11 @@
   font-size: 1.6rem;
   color: var(--color);
   display: none;
-  padding: 0.6rem 1.2rem;
+  padding: 2rem 1.5rem;
 }
 
 .hamburger {
   height: 0px;
-  padding: 5px;
 }
 
 @media (max-width: 768px) {
