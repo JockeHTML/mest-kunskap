@@ -12,7 +12,7 @@ const ForWho = () => {
           <h4>Innovativa utbildningar för dig</h4>
           <h2>Från privatperson till företag</h2>
         </div>
-        <Grid lg={12} className={styles.content}>
+        <Grid container xl={12} className={styles.content}>
           {forWho.map((data, index) => {
             return <Card {...data} />;
           })}

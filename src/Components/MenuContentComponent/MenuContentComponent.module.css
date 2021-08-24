@@ -3,6 +3,7 @@
   flex-direction: row;
   padding: var(--padding6) 0;
   margin: auto;
+  height: auto;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@
 
 .content h1 {
   margin: 0 0 0.3rem 0;
-  font-size: 3.5rem;
+  font-size: 40px;
 }
 
 .title h4 {
@@ -22,19 +23,12 @@
   width: 600px;
 }
 
-.text li {
-  list-style: none;
-}
-
-.special ul {
-  list-style: none;
-}
-
-.special ul li::before {
+.special li::before {
   content: "\2022";
   color: var(--color);
   font-weight: bold;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 1rem;
   font-size: 1.2rem;
   margin-left: -1em;
@@ -82,7 +76,7 @@
 
 .special p,
 .special li {
-  margin: 5px 0 0 0;
+  margin: 0;
   display: flex;
   padding: 0;
   color: var(--lightdark);

@@ -151,19 +151,19 @@ const menuContent = [
     title: "Ta betalt, hur då?",
   },
   {
-    router: "/hälsa",
+    router: "/halsa",
     title: "Hälsoekonomi",
   },
   {
-    router: "/applåder",
+    router: "/applader",
     title: "Skapa applåder",
   },
   {
-    router: "/marknadsföring",
+    router: "/marknadsforing",
     title: "Marknadsföring",
   },
   {
-    router: "/enkät",
+    router: "/enkat",
     title: "Enkät & Utvärdering",
   },
   {
@@ -213,41 +213,57 @@ const forWho = [
 
 const forWhoProducts = [
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Privatpersoner",
     src: "../images/features-3.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Företag",
     src: "../images/features-2.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Organisationer",
     src: "../images/features-1.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Privatpersoner",
     src: "../images/features-3.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Företag",
     src: "../images/features-2.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Organisationer",
     src: "../images/features-1.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Privatpersoner",
     src: "../images/features-3.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
   },
   {
+    routerName: "Läs mer",
+    router: "/kontakt",
     title: "För Företag",
     src: "../images/features-2.svg",
     text: "Get your info tests delivered at home collect a sample from the your pogress tests.",

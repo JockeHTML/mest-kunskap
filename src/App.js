@@ -1,10 +1,10 @@
 import React from "react";
-import styles from './App.module.css';
-import Nav from "./Components/Nav/Nav"
-import Om from './Components/Om/Om';
-import Utbildning from './Components/MenuContent/Utbildning/Utbildning';
-import Kontakt from './Components/Kontakt/Kontakt';
-import Home from './Components/Home/Home';
+import styles from "./App.module.css";
+import Nav from "./Components/Nav/Nav";
+import Om from "./Components/Om/Om";
+import Utbildning from "./Components/MenuContent/Utbildning/Utbildning";
+import Kontakt from "./Components/Kontakt/Kontakt";
+import Home from "./Components/Home/Home";
 import Applåder from "./Components/MenuContent/Applåder/Applåder";
 import Kundservice from "./Components/MenuContent/Kundservice/Kundservice";
 import Betalt from "./Components/MenuContent/Betalt/Betalt";
@@ -13,57 +13,53 @@ import Marknadsföring from "./Components/MenuContent/Marknadsföring/Marknadsf�
 import Enkät from "./Components/MenuContent/Enkät/Enkät";
 import Starta from "./Components/MenuContent/Starta/Starta";
 import Hamburger from "./Components/Nav/Hamburger";
-import {AppProvider} from "./Components/Context/Context";
+import { AppProvider } from "./Components/Context/Context";
 
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
-
   return (
-  <AppProvider>
-    <div className={styles.App}>
-      <Hamburger />
-      <Nav de />
-      <Switch>
+    <AppProvider>
+      <div className={styles.App}>
+        <Hamburger />
+        <Nav de />
+        <Switch>
           <Route path="/om">
-            <Om  />
+            <Om />
           </Route>
           <Route path="/utbildning">
-            <Utbildning  />
+            <Utbildning />
           </Route>
           <Route path="/kontakt">
             <Kontakt />
           </Route>
-          <Route path="/applåder">
-            <Applåder  />
+          <Route path="/applader">
+            <Applåder />
           </Route>
           <Route path="/kundservice">
-            <Kundservice  />
+            <Kundservice />
           </Route>
-          <Route path="/hälsa">
-            <Hälsa  />
+          <Route path="/halsa">
+            <Hälsa />
           </Route>
-          <Route path="/marknadsföring">
-            <Marknadsföring  />
+          <Route path="/marknadsforing">
+            <Marknadsföring />
           </Route>
-          <Route path="/enkät">
-            <Enkät  />
+          <Route path="/enkat">
+            <Enkät />
           </Route>
           <Route path="/starta">
-            <Starta  />
+            <Starta />
           </Route>
           <Route path="/betalt">
-            <Betalt  />
+            <Betalt />
           </Route>
           <Route path="/">
-            <Home  />
+            <Home />
           </Route>
-      </Switch>
-    </div>
-  </AppProvider>
+        </Switch>
+      </div>
+    </AppProvider>
   );
 }
 

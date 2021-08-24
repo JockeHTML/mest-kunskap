@@ -1,9 +1,10 @@
 import React, { useEffect, useContext } from "react";
 import styles from "./Home.module.css";
-import { home, om } from "../Data/Data";
+import { home, kontaker, om } from "../Data/Data";
 import Grid from "@material-ui/core/Grid";
 import { AppContext } from "../Context/Context";
 import Om from "../Om/Om";
+import Kontakt from "../Kontakt/Kontakt";
 
 import { Link } from "react-router-dom";
 import ForWho from "../ForWho/ForWho";
@@ -46,13 +47,13 @@ function Home() {
           );
         })}
         <div className={styles.image}>
-          <img src="" alt="lecture" />
+          <img src="" alt="Mest Kunskap" />
         </div>
       </Grid>
       <ForWho />
       <Om />
       <ForWhoProducts />
-      <MenuContentComponent />
+      <Kontakt />
     </main>
   );
 }

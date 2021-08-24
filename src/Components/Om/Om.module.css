@@ -5,8 +5,8 @@
 }
 
 .wrapper {
-  background-color: white;
   padding: var(--padding6) 0;
+  background-color: white;
 }
 
 .om {
@@ -47,7 +47,7 @@
   border: 2px solid var(--color);
   font-weight: 800;
   border-radius: 4px;
-  background-color: var(--white);
+  background-color: transparent;
   color: var(--color);
   transition: 300ms;
 }

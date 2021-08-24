@@ -8,8 +8,7 @@
 }
 
 nav {
-  background-color: white;
-  border-bottom: 1px solid #e9edf5;
+  background-color: #f3eed9;
 }
 
 .title {
@@ -72,7 +71,7 @@ nav {
 .dropDown li {
   transition: 400ms;
   font-weight: 400;
-  color: var(--white);
+  color: black;
   font-size: 1.1rem;
   padding: 15px 0 0px 0;
   text-decoration: none;
@@ -80,15 +79,15 @@ nav {
 }
 
 .dropDown a:hover {
-  border-bottom: 1.5px solid var(--white);
-  color: var(--white);
+  border-bottom: 1.5px solid black;
+  color: black;
 }
 
 .dropDown {
   width: 300px;
   height: auto;
   position: absolute;
-  background-color: var(--color);
+  background-color: var(--white);
   margin: 1.5rem 0 0 0;
   transition: 400ms;
   border-radius: 0.5rem;
@@ -106,7 +105,7 @@ nav {
   height: 0;
   border: solid transparent;
   border-width: 10px;
-  border-bottom-color: var(--color);
+  border-bottom-color: var(--white);
 }
 
 .dropDown ul {

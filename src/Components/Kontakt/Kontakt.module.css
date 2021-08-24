@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding: 6rem 0 0 0;
+  padding: var(--padding6) 0;
+}
+
+.wrapper {
+  background-color: white;
 }
 
 .info {
@@ -18,7 +22,11 @@
 
 .title h1 {
   margin: 0 0 0.3em 0;
-  font-size: 3.5rem;
+  font-size: 40px;
+}
+
+.title h4 {
+  color: var(--color);
 }
 
 .item {
