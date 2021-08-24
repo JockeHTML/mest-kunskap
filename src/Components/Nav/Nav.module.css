@@ -7,6 +7,11 @@
   padding: 1.5rem 0;
 }
 
+nav {
+  background-color: white;
+  border-bottom: 1px solid #e9edf5;
+}
+
 .title {
   display: flex;
   justify-content: center;

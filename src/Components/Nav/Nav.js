@@ -30,54 +30,56 @@ function Nav() {
   const { defaultHeading } = useContext(AppContext);
 
   return (
-    <Grid container item xs={11} md={11} lg={10} xl={8} id={styles.header}>
-      <Link to="/home" className={styles.title}>
-        <img src="" alt="apple" />
-        <h1>{defaultHeading}</h1>
-      </Link>
+    <nav>
+      <Grid container item xs={11} md={11} lg={10} xl={8} id={styles.header}>
+        <Link to="/home" className={styles.title}>
+          <img src="" alt="apple" />
+          <h1>{defaultHeading}</h1>
+        </Link>
 
-      <div className={styles.links}>
-        <div className={styles.menu}>
-          <ul>
-            {links.map((link, index) => {
-              return (
-                <li key={index}>
-                  <Link to={link.src}>{link.title}</Link>
-                </li>
-              );
-            })}
-            <li
-              onMouseEnter={() => setOnHover(true)}
-              onMouseLeave={() => setOnHover(false)}
-            >
-              <i className="fas fa-angle-down"></i>
-              <Link to="/utbildning">Utbildning & Föreläsningar</Link>
-              <div
-                className={onHover ? styles.hoverWrapper : null}
+        <div className={styles.links}>
+          <div className={styles.menu}>
+            <ul>
+              {links.map((link, index) => {
+                return (
+                  <li key={index}>
+                    <Link to={link.src}>{link.title}</Link>
+                  </li>
+                );
+              })}
+              <li
                 onMouseEnter={() => setOnHover(true)}
                 onMouseLeave={() => setOnHover(false)}
               >
-                <div className={onHover ? styles.dropDown : null}>
-                  {onHover ? (
-                    <ul>
-                      {menuContent.map((content, index) => {
-                        return (
-                          <li key={index}>
-                            <Link to={`${content.router}`}>
-                              {content.title}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  ) : null}
+                <i className="fas fa-angle-down"></i>
+                <Link to="/utbildning">Utbildning & Föreläsningar</Link>
+                <div
+                  className={onHover ? styles.hoverWrapper : null}
+                  onMouseEnter={() => setOnHover(true)}
+                  onMouseLeave={() => setOnHover(false)}
+                >
+                  <div className={onHover ? styles.dropDown : null}>
+                    {onHover ? (
+                      <ul>
+                        {menuContent.map((content, index) => {
+                          return (
+                            <li key={index}>
+                              <Link to={`${content.router}`}>
+                                {content.title}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    ) : null}
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </Grid>
+      </Grid>
+    </nav>
   );
 }
 

@@ -10,6 +10,8 @@
   --white: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   --color: #f56a6a;
+  --padding4: 4.5rem;
+  --padding6: 6rem;
 }
 
 body {

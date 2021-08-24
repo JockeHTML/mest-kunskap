@@ -15,38 +15,40 @@ function Home() {
   });
 
   return (
-    <Grid xs={11} md={11} lg={10} xl={8} container item id={styles.om}>
-      {om.map((info, index) => {
-        return (
-          <Grid
-            key={index}
-            item
-            xs={12}
-            md={12}
-            lg={8}
-            xl={6}
-            className={styles.om}
-          >
-            <div className={styles.content}>
-              <div className={styles.title}>
-                <h1>Lars Löfgren</h1>
-                <h3>{info.text_3}</h3>
+    <div className={styles.wrapper}>
+      <Grid xs={11} md={11} lg={10} xl={8} container item id={styles.om}>
+        {om.map((info, index) => {
+          return (
+            <Grid
+              key={index}
+              item
+              xs={12}
+              md={12}
+              lg={8}
+              xl={6}
+              className={styles.om}
+            >
+              <div className={styles.content}>
+                <div className={styles.title}>
+                  <h4>Vem är jag?</h4>
+                  <h1>{info.text_3}</h1>
+                </div>
+                <div className={styles.text}>
+                  <p>{info.text_1}</p>
+                  <p>{info.text_2}</p>
+                </div>
+                <div className={styles.button}>
+                  <Link to="/kontakt">Kontakta mig</Link>
+                </div>
               </div>
-              <div className={styles.text}>
-                <p>{info.text_1}</p>
-                <p>{info.text_2}</p>
-              </div>
-              <div className={styles.button}>
-                <Link to="/kontakt">Kontakta mig</Link>
-              </div>
-            </div>
-          </Grid>
-        );
-      })}
-      <Grid item xs={12} md={12} lg={6} xl={6} className={styles.image}>
-        <img src="" alt="lecture" />
+            </Grid>
+          );
+        })}
+        <Grid item xs={12} md={12} lg={6} xl={6} className={styles.image}>
+          <img src="" alt="lecture" />
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 }
 

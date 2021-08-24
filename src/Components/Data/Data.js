@@ -44,9 +44,9 @@ const textContent = [
       title: "Utbildning & Föreläsningar",
       heading: "Valfri titel",
       text_1:
-        "Lars Löfgren är en populär föreläsare som fokuserar på kunskap och humor. Han har så länge han kan minnas gillat att prata. Oavsett plats så finns det alltid något klokt eller oklokt att säga, spännande tycker Lars. Hur som helst, många anser att Lars är en fartfylld retoriker som ofta har något intressant att berätta.",
+        "Lars Löfgren är en populär föreläsare som fokuserar på kunskap och humor. ",
       text_2:
-        "Varför då kan man undra?  Kanske för att Lars är en nyfiken man som ofta ställer frågor om precis allt, till precis vem som helst. Kanske för att Lars samlar på kundserviceupplevelser, bra, dåliga och ovanliga. Kanske för att Lars är en erfaren pedagog. Kanske för att Lars har startat upp flera företag. Kanske för att Lars har misslyckats ibland. Kanske för att Lars även har lyckats några gånger. Kanske för att Lars bjuder på sig själv. Kanske för att Lars är orädd. Kanske för att Lars har något att berätta. Kanske för att Lars brinner för kunskapsunderhållning.",
+        "Han har så länge han kan minnas gillat att prata. Oavsett plats så finns det alltid något klokt eller oklokt att säga, spännande tycker Lars. Hur som helst, många anser att Lars är en fartfylld retoriker som ofta har något intressant att berätta. Varför då kan man undra?  Kanske för att Lars är en nyfiken man som ofta ställer frågor om precis allt, till precis vem som helst. Kanske för att Lars samlar på kundserviceupplevelser, bra, dåliga och ovanliga. Kanske för att Lars är en erfaren pedagog. Kanske för att Lars har startat upp flera företag. Kanske för att Lars har misslyckats ibland. Kanske för att Lars även har lyckats några gånger. Kanske för att Lars bjuder på sig själv. Kanske för att Lars är orädd. Kanske för att Lars har något att berätta. Kanske för att Lars brinner för kunskapsunderhållning.",
       text_3:
         "Lars Löfgren och Mest Kunskap erbjuder ett antal föreläsningar med ett tydligt fokus. Varje föreläsning är mellan 1-2 timmar, en del humor kan förekomma. Mest Kunskap erbjuder även ett antal utbildningar som kan anpassas utifrån kundens önskemål.",
       text_4:
@@ -193,4 +193,74 @@ const links = [
   },
 ];
 
-export { menuContent, kontaker, om, textContent, home, links };
+const forWho = [
+  {
+    title: "För Privatpersoner",
+    src: "../images/features-3.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Företag",
+    src: "../images/features-2.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+  },
+  {
+    title: "För Organisationer",
+    src: "../images/features-1.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+];
+
+const forWhoProducts = [
+  {
+    title: "För Privatpersoner",
+    src: "../images/features-3.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Företag",
+    src: "../images/features-2.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+  },
+  {
+    title: "För Organisationer",
+    src: "../images/features-1.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Privatpersoner",
+    src: "../images/features-3.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Företag",
+    src: "../images/features-2.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+  },
+  {
+    title: "För Organisationer",
+    src: "../images/features-1.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Privatpersoner",
+    src: "../images/features-3.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+  },
+  {
+    title: "För Företag",
+    src: "../images/features-2.svg",
+    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+  },
+];
+
+export {
+  forWhoProducts,
+  forWho,
+  menuContent,
+  kontaker,
+  om,
+  textContent,
+  home,
+  links,
+};

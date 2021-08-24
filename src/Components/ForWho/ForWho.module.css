@@ -1,0 +1,54 @@
+.title {
+  margin: auto;
+  margin-bottom: var(--padding4);
+  text-align: center;
+}
+
+.title h4 {
+  color: var(--color);
+}
+
+.title h2 {
+  margin-bottom: 0;
+}
+
+.forWho {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.productsContent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+
+.content {
+  margin: auto !important;
+  display: flex;
+}
+
+.wrapper {
+  background-color: white;
+  padding: var(--padding6) 0 0 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 4rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.info h3 {
+  color: black;
+}

@@ -1,13 +1,21 @@
 #MenuContent {
   display: flex;
   flex-direction: row;
-  padding: 8rem 0 0 0;
+  padding: var(--padding6) 0;
   margin: auto;
+}
+
+.wrapper {
+  background-color: #f6f8fb;
 }
 
 .content h1 {
   margin: 0 0 0.3rem 0;
   font-size: 3.5rem;
+}
+
+.title h4 {
+  color: var(--color);
 }
 
 .content {
