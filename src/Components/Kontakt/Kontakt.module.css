@@ -57,7 +57,7 @@
 .formHeading h2 {
   letter-spacing: 0.5px;
   margin-top: 0;
-  color: var(--color);
+  color: black;
 }
 
 .input input {
@@ -147,5 +147,11 @@
   }
   .formButton button {
     font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 350px;
   }
 }

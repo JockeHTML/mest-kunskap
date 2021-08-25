@@ -17,7 +17,7 @@ function Kontakt() {
   return (
     <div className={styles.wrapper}>
       <Grid xs={11} md={11} lg={10} xl={8} container item id={styles.kontakt}>
-        <Grid item xs={12} md={12} lg={5} xl={6} className={styles.info}>
+        <Grid item xs={12} md={6} lg={6} xl={6} className={styles.info}>
           <div className={styles.title}>
             <h4>Kontakta mig</h4>
             <h1>Lorem ipsum dolor dolor amet dolo?</h1>
@@ -38,7 +38,7 @@ function Kontakt() {
             );
           })}
         </Grid>
-        <Grid item xs={12} md={12} lg={6} xl={6} className={styles.formWrapper}>
+        <Grid item xs={12} md={6} lg={6} xl={6} className={styles.formWrapper}>
           <form autoComplete="off" className={styles.form}>
             <div className={styles.formHeading}>
               <h2>Fyll i formuläret så återkommer jag så fort vi kan!</h2>

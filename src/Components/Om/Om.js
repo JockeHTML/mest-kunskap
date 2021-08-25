@@ -23,8 +23,8 @@ function Home() {
               key={index}
               item
               xs={12}
-              md={12}
-              lg={8}
+              md={10}
+              lg={6}
               xl={6}
               className={styles.om}
             >
