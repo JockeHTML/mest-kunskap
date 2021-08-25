@@ -21,39 +21,41 @@ function Home() {
 
   return (
     <main>
-      <Grid xs={11} md={11} lg={10} xl={8} item id={styles.home}>
-        {home.map((home, index) => {
-          return (
-            <Grid
-              key={index}
-              xs={12}
-              md={12}
-              lg={10}
-              xl={5}
-              item
-              className={styles.content}
-            >
-              <div className={styles.title}>
-                <h1>{home.text_1}</h1>
-                <h3>{home.text_2}</h3>
-              </div>
-              <div className={styles.text}>
-                <p>{home.text_3}</p>
-              </div>
-              <span className={styles.button}>
-                <Link to="/om">Mer om mig</Link>
-              </span>
-            </Grid>
-          );
-        })}
-        <div className={styles.image}>
-          <img src="" alt="Mest Kunskap" />
-        </div>
-      </Grid>
-      <ForWho />
-      <Om />
-      <ForWhoProducts />
-      <Kontakt />
+      <div className={styles.homeWrapper}>
+        <Grid xs={11} md={11} lg={10} xl={8} item id={styles.home}>
+          {home.map((home, index) => {
+            return (
+              <Grid
+                key={index}
+                xs={12}
+                md={12}
+                lg={10}
+                xl={6}
+                item
+                className={styles.content}
+              >
+                <div className={styles.title}>
+                  <h1>{home.text_1}</h1>
+                  <h3>{home.text_2}</h3>
+                </div>
+                <div className={styles.text}>
+                  <p>{home.text_3}</p>
+                </div>
+                <span className={styles.button}>
+                  <Link to="/om">Mer om mig</Link>
+                </span>
+              </Grid>
+            );
+          })}
+          <div className={styles.image}>
+            <img src="" alt="Mest Kunskap" />
+          </div>
+        </Grid>
+        <ForWho />
+        <Om />
+        <ForWhoProducts />
+        <Kontakt />
+      </div>
     </main>
   );
 }

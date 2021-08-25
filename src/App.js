@@ -16,6 +16,7 @@ import Hamburger from "./Components/Nav/Hamburger";
 import { AppProvider } from "./Components/Context/Context";
 
 import { Switch, Route } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </AppProvider>
   );

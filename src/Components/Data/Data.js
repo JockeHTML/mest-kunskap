@@ -270,7 +270,35 @@ const forWhoProducts = [
   },
 ];
 
+const footerLinks = [
+  {
+    title: "Hem",
+    src: "/home",
+    router: "/home",
+    icon: "fas fa-home",
+  },
+  {
+    title: "Om mig",
+    src: "/om",
+    router: "/om",
+    icon: "fas fa-info-circle",
+  },
+  {
+    title: "Kontakt",
+    src: "/kontakt",
+    router: "/kontakt",
+    icon: "fas fa-phone-square-alt",
+  },
+  {
+    title: "Utbildning & Föreläsningar",
+    src: "/utbildning",
+    router: "/utbildning",
+    icon: "fas fa-phone-square-alt",
+  },
+];
+
 export {
+  footerLinks,
   forWhoProducts,
   forWho,
   menuContent,

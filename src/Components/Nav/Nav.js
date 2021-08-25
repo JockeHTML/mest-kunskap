@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import styles from "./Nav.module.css";
 import { menuContent, links } from "../Data/Data";
-import Social from "./Social";
 import Grid from "@material-ui/core/Grid";
 import { AppContext } from "../Context/Context";
 
 import { Link } from "react-router-dom";
+import Icon from "./Icon";
 
 function Nav() {
   const [active, setActive] = useState(false);
@@ -32,10 +32,7 @@ function Nav() {
   return (
     <nav>
       <Grid container item xs={11} md={11} lg={10} xl={8} id={styles.header}>
-        <Link to="/home" className={styles.title}>
-          <img src="" alt="apple" />
-          <h1>{defaultHeading}</h1>
-        </Link>
+        <Icon defaultHeading={defaultHeading} />
 
         <div className={styles.links}>
           <div className={styles.menu}>

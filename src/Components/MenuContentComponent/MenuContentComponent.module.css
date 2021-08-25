@@ -6,10 +6,6 @@
   height: auto;
 }
 
-.wrapper {
-  background-color: #f6f8fb;
-}
-
 .content h1 {
   margin: 0 0 0.3rem 0;
   font-size: 40px;
@@ -17,6 +13,7 @@
 
 .title h4 {
   color: var(--color);
+  margin-top: 0;
 }
 
 .content {

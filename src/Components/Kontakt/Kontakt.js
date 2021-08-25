@@ -21,6 +21,11 @@ function Kontakt() {
           <div className={styles.title}>
             <h4>Kontakta mig</h4>
             <h1>Lorem ipsum dolor sit amet consectetur, facilis?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              inventore consequatur voluptate sint numquam, itaque delectus!
+              Tenetur quod sit eveniet.
+            </p>
           </div>
           {kontaker.map((kontakt, index) => {
             return (
@@ -29,7 +34,7 @@ function Kontakt() {
                   <i className={kontakt.icon}></i>
                 </div>
                 <span>
-                  <h2>{kontakt.content}</h2>
+                  <p>{kontakt.content}</p>
                 </span>
               </div>
             );

@@ -8,7 +8,8 @@
 }
 
 nav {
-  background-color: #f3eed9;
+  background-color: white;
+  border-bottom: 1px solid #e9edf5;
 }
 
 .title {
@@ -28,8 +29,7 @@ nav {
 
 .title img {
   content: url("../../images/apple.png");
-  width: 50px;
-  margin-bottom: 15px;
+  width: 30px;
 }
 
 .links {
@@ -71,7 +71,7 @@ nav {
 .dropDown li {
   transition: 400ms;
   font-weight: 400;
-  color: black;
+  color: white;
   font-size: 1.1rem;
   padding: 15px 0 0px 0;
   text-decoration: none;
@@ -79,15 +79,15 @@ nav {
 }
 
 .dropDown a:hover {
-  border-bottom: 1.5px solid black;
-  color: black;
+  border-bottom: 1.5px solid white;
+  color: white;
 }
 
 .dropDown {
   width: 300px;
   height: auto;
   position: absolute;
-  background-color: var(--white);
+  background-color: var(--color);
   margin: 1.5rem 0 0 0;
   transition: 400ms;
   border-radius: 0.5rem;
@@ -105,7 +105,8 @@ nav {
   height: 0;
   border: solid transparent;
   border-width: 10px;
-  border-bottom-color: var(--white);
+
+  border-bottom-color: var(--color);
 }
 
 .dropDown ul {

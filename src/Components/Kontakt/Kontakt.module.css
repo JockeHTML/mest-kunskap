@@ -3,6 +3,7 @@
   flex-direction: row;
   margin: auto;
   padding: var(--padding6) 0;
+  align-items: center;
 }
 
 .wrapper {
@@ -16,7 +17,7 @@
 
 .icon i {
   color: var(--color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: auto;
 }
 
@@ -27,6 +28,7 @@
 
 .title h4 {
   color: var(--color);
+  margin-top: 0;
 }
 
 .item {
@@ -37,17 +39,17 @@
 }
 
 .item span {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 100vh;
-  border: 3px solid var(--color);
+  border: 1px solid var(--color);
 }
 
 .formWrapper {
@@ -63,8 +65,8 @@
   background-color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 0.5rem;
-  padding: 2rem;
-  width: 400px;
+  padding: 3rem 2rem;
+  width: 450px;
   max-width: 100%;
 }
 
@@ -77,10 +79,11 @@
 .input input {
   border: none;
   outline: none;
-  background-color: #f1f1f1;
+  background-color: #f9fbfd;
   text-decoration: none;
-  padding: 1rem 0 !important;
   margin: 5px 0 !important;
+  letter-spacing: 1px;
+  line-height: 45px;
   width: 100%;
   font-family: "Roboto Slab", serif;
   max-width: 100%;
@@ -88,14 +91,16 @@
 
 .message textarea {
   border: none;
-  background-color: #f1f1f1;
+  background-color: #f9fbfd;
   outline: none;
   text-decoration: none;
   height: 150px;
-  padding: 1rem 0;
   margin: 5px 0;
+  line-height: 45px;
+
   width: 100%;
   max-width: 100%;
+  font-family: "Roboto Slab", serif;
 }
 
 .formButton button {
