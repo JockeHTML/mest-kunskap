@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import Icon from "./Icon";
 
 function Nav() {
-  const [active, setActive] = useState(false);
+  /*const [active, setActive] = useState(false);
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setActive(false);
@@ -23,7 +23,7 @@ function Nav() {
     } else {
       setActive(false);
     }
-  };
+  };*/
 
   /* useState hook used for showing data on hover or not */
   const [onHover, setOnHover] = useState();
