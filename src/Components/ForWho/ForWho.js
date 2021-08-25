@@ -7,14 +7,14 @@ import Card from "./Card.js";
 const ForWho = () => {
   return (
     <div className={styles.wrapper}>
-      <Grid xl={8} container className={styles.forWho}>
+      <Grid xs={12} xl={8} container className={styles.forWho}>
         <div className={styles.title}>
           <h4>Innovativa utbildningar för dig</h4>
           <h2>Från privatperson till företag</h2>
         </div>
-        <Grid container xl={12} className={styles.content}>
+        <Grid container xs={10} xl={12} className={styles.content}>
           {forWho.map((data, index) => {
-            return <Card {...data} />;
+            return <Card key={index} {...data} />;
           })}
         </Grid>
       </Grid>

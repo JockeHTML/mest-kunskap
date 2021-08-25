@@ -15,12 +15,6 @@
   flex-direction: column;
 }
 
-.icon i {
-  color: var(--color);
-  font-size: 1.5rem;
-  margin: auto;
-}
-
 .title h1 {
   margin: 0 0 0.3em 0;
   font-size: 40px;
@@ -40,16 +34,6 @@
 
 .item span {
   margin-left: 2rem;
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 100vh;
-  border: 1px solid var(--color);
 }
 
 .formWrapper {
@@ -135,28 +119,8 @@
 }
 
 @media (max-width: 768px) {
-  #kontakt {
-    padding-top: 0.5rem;
-  }
-  .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  .item h2 {
-    font-size: 0.8rem;
-  }
-  .item span {
-    margin-left: 0.5rem;
-  }
-  .icon i {
-    font-size: 1.5rem;
-  }
-  .title h1 {
-    font-size: 1.8rem;
-    padding-top: 1rem;
-  }
-  .formHeading h2 {
-    font-size: 1.1rem;
+  .title {
+    text-align: center;
   }
   .input input {
     width: 100%;

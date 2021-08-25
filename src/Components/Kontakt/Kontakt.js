@@ -20,7 +20,7 @@ function Kontakt() {
         <Grid item xs={12} md={12} lg={5} xl={6} className={styles.info}>
           <div className={styles.title}>
             <h4>Kontakta mig</h4>
-            <h1>Lorem ipsum dolor sit amet consectetur, facilis?</h1>
+            <h1>Lorem ipsum dolor dolor amet dolo?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
               inventore consequatur voluptate sint numquam, itaque delectus!
@@ -30,9 +30,7 @@ function Kontakt() {
           {kontaker.map((kontakt, index) => {
             return (
               <div key={index} className={styles.item}>
-                <div className={styles.icon}>
-                  <i className={kontakt.icon}></i>
-                </div>
+                <img src={kontakt.icon} alt="" />
                 <span>
                   <p>{kontakt.content}</p>
                 </span>

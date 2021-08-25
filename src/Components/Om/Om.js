@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <div className={styles.wrapper}>
-      <Grid xs={11} md={11} lg={10} xl={8} container item id={styles.om}>
+      <Grid xs={10} md={11} lg={10} xl={8} container item id={styles.om}>
         {om.map((info, index) => {
           return (
             <Grid

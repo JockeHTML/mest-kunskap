@@ -1,6 +1,6 @@
 const home = [
   {
-    text_1: "Ett innovativt sätt att få dig eller ditt företag att växa",
+    text_1: "Ett innovativt sätt att få dig eller din organisation att växa",
     text_2: "Lars Löfgren, utbildad civilekonom och pedagog",
     text_3:
       "Mest Kunskap är ett innovativt utbildningsföretag som erbjuder kunskapsstimulerande tjänster & produkter till både organisationer och individer. Hos Mest Kunskap blandas kärnfull kunskap tillsammans med glädje & skratt. Kunskap skall vara roligt och det är något som genomlyser Mest Kunskaps föreläsningar och kurser.",
@@ -10,19 +10,19 @@ const home = [
 const kontaker = [
   {
     content: "Lars Löfgren",
-    icon: "fas fa-user",
+    icon: "../images/user.png",
   },
   {
     content: "070 539 12 90",
-    icon: "fas fa-phone-alt",
+    icon: "../images/telephone.png",
   },
   {
     content: "Lars@mestkunskap.se",
-    icon: "fas fa-envelope",
+    icon: "../images/email.png",
   },
   {
     content: "Mjölnervägen 8, 857 41 Sundsvall",
-    icon: "fas fa-home",
+    icon: "../images/pin.png",
   },
 ];
 
@@ -214,59 +214,59 @@ const forWho = [
 const forWhoProducts = [
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Privatpersoner",
+    title: "Utbildning & Föreläsningar",
+    router: "/utbildning",
+    src: "../images/features-9.svg",
+    text: "Lars Löfgren är en populär föreläsare som fokuserar på kunskap och humor. ",
+  },
+  {
+    routerName: "Läs mer",
+    title: "Kundservice tack!",
+    router: "/kundservice",
     src: "../images/features-3.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+    text: "En lönsam och rolig föreläsning till dig och dina kollegor.",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Företag",
-    src: "../images/features-2.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
-  },
-  {
-    routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Organisationer",
+    title: "Ta betalt, hur då?",
+    router: "/betalt",
     src: "../images/features-1.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+    text: "En föreläsning som fokuserar på prislappar och det som inom företagsekonomin kallas för prissättning",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Privatpersoner",
-    src: "../images/features-3.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+    title: "Hälsoekonomi",
+    router: "/halsa",
+    src: "../images/features-4.svg",
+    text: "Hur frisk är din organisation? I de flesta organisationer är människor engagerade i värdeprocessen, man brukar ju säga att personalen är företagets viktigaste resurs. Vad innebär ohälsa hos personalen i en organisation och vilka kostnader medför detta. På vilket sätt kan personal med god hälsa bidra till ökade resultat i en organisation. Det här är en föreläsning om hälsa och ohälsa och vilka ekonomiska effekter dessa inslag har på en organisations verksamhet.",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Företag",
-    src: "../images/features-2.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+    title: "Skapa applåder",
+    router: "/applader",
+    src: "../images/features-5.svg",
+    text: "Jobbar du med försäljning? Pratar du inför publik? Ska du föreläsa? Vill du få applåder?",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Organisationer",
-    src: "../images/features-1.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+    title: "Marknadsföring",
+    router: "/marknadsforing",
+    src: "../images/features-6.svg",
+    text: "Marknadsföring är ett område som berör både små och stora företag. Denna kurs ger en grundläggande genomgång av marknadsföring som helhet. Marknadsföring handlar helt enkelt om att öka förutsättningarna till att bli ett lönsamt och framgångsrikt företag. Vi går igenom ett antal områden och moment som du som är intresserad av marknadsföring bör känna till.  Några av de inslag som  ingår är affärsidé, varumärke, köpbeteende, försäljning, kundvård, relationer, marknadskommunikation, prissättning, strategier, trender, konkurrens, samarbete/allianser, socialt ansvar, lagar och regler.",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Privatpersoner",
-    src: "../images/features-3.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.    ",
+    title: "Enkät & Utvärdering",
+    router: "/enkat",
+    src: "../images/features-7.svg",
+    text: "Att utforma och konstruera en korrekt enkät är av stor betydelse om du vill få fram ett relevant beslutsunderlag. Enkäter används bland annat vid marknadsundersökningar, utbildningar och personalutvärderingar. Enkäter och utvärderingar kan konstrueras på många olika sätt. Vi beskriver konstruktionsprocessen och ger värdefulla tips & råd som ökar förutsättningarna till en lyckad enkät/utvärdering.",
   },
   {
     routerName: "Läs mer",
-    router: "/kontakt",
-    title: "För Företag",
-    src: "../images/features-2.svg",
-    text: "Get your info tests delivered at home collect a sample from the your pogress tests.",
+    title: "Starta eget",
+    router: "/starta",
+    src: "../images/features-8.svg",
+    text: "Vad krävs för att starta ett eget företag och vad behöver du som ska starta eget veta? Mest Kunskaps Starta eget kurs ger precis den kunskap som krävs för att gå från idé till att bli ett etablerat företag. Många företag misslyckas på grund av bristande kunskaper i hur man praktiskt driver ett företag. Lars Löfgren med flera års erfarenhet som egenföretagare ger i denna kurs goda förutsättningar till ett lyckat företagande.",
   },
 ];
 

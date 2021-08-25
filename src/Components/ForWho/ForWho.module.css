@@ -45,6 +45,7 @@
   align-items: flex-start;
   margin-right: 4rem;
   margin-bottom: var(--padding6);
+  max-width: 100%;
 }
 
 .card a {
@@ -70,4 +71,24 @@
 
 .info h3 {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+  }
+  .info {
+    margin-left: 0;
+  }
+  .forWhoContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 }

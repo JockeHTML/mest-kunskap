@@ -1,14 +1,12 @@
 import React, { useEffect, useContext } from "react";
 import styles from "./Home.module.css";
-import { home, kontaker, om } from "../Data/Data";
+import { home } from "../Data/Data";
 import Grid from "@material-ui/core/Grid";
 import { AppContext } from "../Context/Context";
 import Om from "../Om/Om";
 import Kontakt from "../Kontakt/Kontakt";
-
 import { Link } from "react-router-dom";
 import ForWho from "../ForWho/ForWho";
-import MenuContentComponent from "../MenuContentComponent/MenuContentComponent";
 import ForWhoProducts from "../ForWho/ForWhoProducts";
 
 function Home() {
@@ -30,7 +28,7 @@ function Home() {
                 xs={12}
                 md={12}
                 lg={10}
-                xl={6}
+                xl={5}
                 item
                 className={styles.content}
               >
@@ -48,7 +46,7 @@ function Home() {
             );
           })}
           <div className={styles.image}>
-            <img src="" alt="Mest Kunskap" />
+            <img src="" alt="Mest Kunskap Avatar" />
           </div>
         </Grid>
         <ForWho />

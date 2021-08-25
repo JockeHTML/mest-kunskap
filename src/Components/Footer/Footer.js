@@ -8,12 +8,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Grid className={styles.footerContainer} container xl={8}>
+      <Grid className={styles.footerContainer} container xs={10} xl={8}>
         <Icon />
+
         <ul>
           <li>
             <a href="https://www.facebook.com/mestkunskap">
-              <i class="fab fa-facebook"></i>
+              <i className="fab fa-facebook"></i>
             </a>
           </li>
           {footerLinks.map((data, index) => {
