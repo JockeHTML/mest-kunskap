@@ -5,7 +5,6 @@
 }
 
 .title h4 {
-  color: var(--color);
   margin-top: 0;
 }
 
@@ -14,7 +13,7 @@
 }
 
 .forWho {
-  margin: auto;
+  margin: auto !important;
 }
 
 .forWhoProducts {
@@ -25,7 +24,6 @@
 }
 
 .content {
-  margin: auto !important;
   display: flex;
 }
 
@@ -36,6 +34,8 @@
 
 .productsWrapper {
   padding: var(--padding6) 0 0 0;
+  justify-content: center;
+  display: flex;
 }
 
 .card {
@@ -81,15 +81,24 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-right: auto;
+    margin-right: 0;
+    margin-bottom: var(--padding4);
+  }
+  .card img {
+    margin-bottom: 1rem;
   }
   .info {
     margin-left: 0;
   }
   .forWhoContainer {
     justify-content: center;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .forWho {
+    justify-content: center;
     align-items: center;
-    display: flex;
   }
 }
 

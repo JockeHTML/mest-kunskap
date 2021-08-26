@@ -3,11 +3,11 @@ import styles from "./Om.module.css";
 import { om } from "../Data/Data";
 import Grid from "@material-ui/core/Grid";
 import { AppContext } from "../Context/Context";
-
+import { ThemeProvider, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const { setDefaultHeading } = useContext(AppContext);
+  const { theme, setDefaultHeading } = useContext(AppContext);
 
   /* useEffect hook render right heading */
   useEffect(() => {
@@ -28,19 +28,27 @@ function Home() {
               xl={6}
               className={styles.om}
             >
-              <div className={styles.content}>
-                <div className={styles.title}>
-                  <h4>Vem är jag?</h4>
-                  <h1>{info.text_3}</h1>
+              <ThemeProvider theme={theme}>
+                <div className={styles.content}>
+                  <div className={styles.title}>
+                    <h4>Vem är jag?</h4>
+                    <Typography
+                      style={{ fontFamily: "DM sans" }}
+                      color="inherit"
+                      variant="h3"
+                    >
+                      {info.text_3}
+                    </Typography>
+                  </div>
+                  <div className={styles.text}>
+                    <p>{info.text_1}</p>
+                    <p>{info.text_2}</p>
+                  </div>
+                  <div className={styles.button}>
+                    <Link to="/kontakt">Kontakta mig</Link>
+                  </div>
                 </div>
-                <div className={styles.text}>
-                  <p>{info.text_1}</p>
-                  <p>{info.text_2}</p>
-                </div>
-                <div className={styles.button}>
-                  <Link to="/kontakt">Kontakta mig</Link>
-                </div>
-              </div>
+              </ThemeProvider>
             </Grid>
           );
         })}

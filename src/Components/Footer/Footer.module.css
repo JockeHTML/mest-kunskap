@@ -1,6 +1,6 @@
 .footerContainer {
   padding: 3rem 0;
-  margin: auto;
+  margin: auto !important;
   display: flex;
   justify-content: space-between;
 }

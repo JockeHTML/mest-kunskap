@@ -1,6 +1,6 @@
 const home = [
   {
-    text_1: "Ett innovativt sätt att få dig eller din organisation att växa",
+    text_1: "Ett innovativt sätt att din organisation att växa",
     text_2: "Lars Löfgren, utbildad civilekonom och pedagog",
     text_3:
       "Mest Kunskap är ett innovativt utbildningsföretag som erbjuder kunskapsstimulerande tjänster & produkter till både organisationer och individer. Hos Mest Kunskap blandas kärnfull kunskap tillsammans med glädje & skratt. Kunskap skall vara roligt och det är något som genomlyser Mest Kunskaps föreläsningar och kurser.",

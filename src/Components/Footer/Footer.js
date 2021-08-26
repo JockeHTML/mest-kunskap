@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Grid className={styles.footerContainer} container xs={10} xl={8}>
+      <Grid className={styles.footerContainer} container item xs={10} xl={8}>
         <Icon />
 
         <ul>
