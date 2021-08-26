@@ -13,7 +13,7 @@ const Footer = () => {
 
         <ul>
           <li>
-            <a href="https://www.facebook.com/mestkunskap">
+            <a target="__blank" href="https://www.facebook.com/mestkunskap">
               <i className="fab fa-facebook"></i>
             </a>
           </li>

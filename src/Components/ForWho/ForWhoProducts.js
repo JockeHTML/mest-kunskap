@@ -12,7 +12,7 @@ const ForWhoProducts = () => {
   return (
     <div className={styles.productsWrapper}>
       <Grid
-        xs={12}
+        xs={10}
         md={12}
         lg={12}
         xl={10}
@@ -31,7 +31,7 @@ const ForWhoProducts = () => {
 
         <Grid
           item
-          xs={10}
+          xs={12}
           md={12}
           lg={12}
           xl={12}

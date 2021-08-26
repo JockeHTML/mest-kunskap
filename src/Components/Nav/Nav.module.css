@@ -69,18 +69,16 @@ nav {
 
 .dropDown a,
 .dropDown li {
-  transition: 400ms;
   font-weight: 400;
   color: black;
   font-size: 1.1rem;
-  padding: 15px 0 0px 0;
+  padding: 8px 0;
   text-decoration: none;
   margin-left: 0;
 }
 
 .dropDown a:hover {
-  border-bottom: 1.5px solid black;
-  color: black;
+  color: var(--color);
 }
 
 .dropDown {
@@ -96,7 +94,7 @@ nav {
   padding: 5px;
 }
 
-.dropDown:after {
+/*.dropDown:after {
   content: "";
   position: absolute;
   right: 230px;
@@ -107,7 +105,7 @@ nav {
   border-width: 10px;
   border-bottom-color: white;
   box-shadow: var(--shadow);
-}
+}*/
 
 .dropDown ul {
   padding: 1rem 1.1rem;

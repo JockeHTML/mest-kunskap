@@ -132,12 +132,10 @@
   }
   .form {
     padding: 2rem 0;
-    margin: 0;
+    margin: 2rem 0 0 0;
     max-width: 100%;
   }
-  .formWrapper {
-    padding: 1.5rem 0 1rem 0;
-  }
+
   .formHeading h5 {
     margin: 0 1rem 1rem 1rem;
   }
@@ -148,5 +146,14 @@
   }
   .formButton button {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .form {
+    width: 350px;
   }
 }

@@ -71,6 +71,14 @@
   display: flex;
 }
 
+.text p:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.special ul {
+  margin-bottom: 0;
+}
+
 .special p,
 .special li {
   margin: 0;
@@ -85,9 +93,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 2rem !important;
+    padding: var(--padding4) 0 !important;
   }
-
+  .title h4 {
+    margin-top: 2rem;
+  }
   .image img {
     height: 250px;
     border-radius: 4px;
@@ -100,7 +110,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem !important;
+    padding-top: var(--padding4) !important;
   }
   .title {
     width: 70%;

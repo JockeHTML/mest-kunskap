@@ -13,7 +13,7 @@ const ForWho = () => {
     <ThemeProvider theme={theme}>
       <div className={styles.wrapper}>
         <Grid
-          xs={12}
+          xs={10}
           lg={12}
           md={12}
           xl={8}
@@ -25,9 +25,11 @@ const ForWho = () => {
             <h4 style={{ color: "var(--color)" }}>
               Innovativa utbildningar för dig
             </h4>
-            <Typography variant="h4">Från privatperson till företag</Typography>
+            <Typography variant="h4">
+              Från privatperson till organisationer
+            </Typography>
           </div>
-          <Grid item md={12} lg={12} xs={10} xl={12} className={styles.content}>
+          <Grid item md={12} lg={12} xs={12} xl={12} className={styles.content}>
             {forWho.map((data, index) => {
               return <Card key={index} {...data} />;
             })}
