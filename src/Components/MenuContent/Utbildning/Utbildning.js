@@ -20,7 +20,9 @@ function Utbildning() {
 
   return (
     <>
-      <MenuContentComponent saveText={saveText} />
+      <div style={{ marginBottom: "-6rem" }}>
+        <MenuContentComponent saveText={saveText} />
+      </div>
       <ForWhoProducts />
     </>
   );

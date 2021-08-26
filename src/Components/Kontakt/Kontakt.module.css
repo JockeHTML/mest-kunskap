@@ -1,13 +1,17 @@
 #kontakt {
   display: flex;
   flex-direction: row;
-  margin: auto;
   padding: var(--padding6) 0;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  min-height: 80vh;
 }
 
 .info {

@@ -17,7 +17,15 @@ function MenuContentComponent({ StartaEgetList }) {
         item
         id={styles.MenuContent}
       >
-        <Grid item xs={12} md={12} lg={6} xl={6} className={styles.content}>
+        <Grid
+          item
+          sm={12}
+          xs={12}
+          md={12}
+          lg={6}
+          xl={6}
+          className={styles.content}
+        >
           <div className={styles.title}>
             <h4>{saveText.title}</h4>
             <h1>{saveText.text_1}</h1>
@@ -40,7 +48,15 @@ function MenuContentComponent({ StartaEgetList }) {
             ) : null}
           </div>
         </Grid>
-        <Grid item xs={12} md={12} lg={6} xl={6} className={styles.image}>
+        <Grid
+          item
+          sm={12}
+          xs={12}
+          md={12}
+          lg={6}
+          xl={6}
+          className={styles.image}
+        >
           <img src={saveText.src} alt="lecture" />
         </Grid>
       </Grid>
