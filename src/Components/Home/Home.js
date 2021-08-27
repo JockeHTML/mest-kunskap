@@ -42,7 +42,7 @@ function Home() {
                     >
                       {home.text_1}
                     </Typography>
-                    <Typography style={{ fontFamily: "DM sans" }} variant="h6">
+                    <Typography style={{ fontFamily: "DM sans" }} variant="h5">
                       {home.text_2}
                     </Typography>
                   </div>

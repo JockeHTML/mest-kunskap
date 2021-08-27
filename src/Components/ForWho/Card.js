@@ -10,9 +10,10 @@ const Card = (props) => {
         <h3>{props.title}</h3>
         <p>{props.text.substring(0, 90)}...</p>
         {props.routerName ? (
-          <Link to={props.router}>{props.routerName}</Link>
+          <Link to={props.router}>
+            {props.routerName} <i className="fas fa-chevron-right"></i>
+          </Link>
         ) : null}
-        {props.routerName ? <i className="fas fa-chevron-right"></i> : null}
       </div>
     </div>
   );

@@ -8,6 +8,12 @@ import { Link } from "react-router-dom";
 import Icon from "./Icon";
 
 function Nav() {
+  /*const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);*/
   /*const [active, setActive] = useState(false);
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {

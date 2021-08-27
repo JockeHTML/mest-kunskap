@@ -65,8 +65,8 @@
   object-position: center;
   object-fit: cover;
   border-radius: 100vh;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .image {
@@ -106,13 +106,6 @@
     height: 250px;
     border-radius: 4px;
     width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .image img {
-    width: 450px;
-    height: 450px;
   }
 }
 
