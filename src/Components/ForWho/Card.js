@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./ForWho.module.css";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Card = (props) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className={styles.card}>
+    <div data-aos="fade-up" className={styles.card}>
       <img src={props.src} alt={props.title} />
       <div className={styles.info}>
         <h3>{props.title}</h3>
