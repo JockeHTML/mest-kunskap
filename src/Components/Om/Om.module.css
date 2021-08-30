@@ -70,7 +70,6 @@
 }
 
 @media (max-width: 768px) {
-  .om,
   #om {
     flex-direction: column-reverse;
     justify-content: center;

@@ -40,6 +40,7 @@ function Nav() {
     <nav>
       <Grid container item xs={11} md={11} lg={10} xl={8} id={styles.header}>
         <Icon defaultHeading={defaultHeading} />
+
         <TemporaryDrawer />
         <div className={styles.links}>
           <div className={styles.menu}>

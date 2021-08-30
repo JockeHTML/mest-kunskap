@@ -9,7 +9,6 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { menuContent, links } from "../Data/Data";
 import { Link } from "react-router-dom";
-import Icon from "./Icon";
 
 const useStyles = makeStyles({
   list: {
@@ -21,8 +20,6 @@ const useStyles = makeStyles({
   link: {
     textDecoration: "none",
     color: "black",
-    fontWeight: "400",
-    fontSize: "22px",
   },
 });
 
@@ -57,7 +54,6 @@ export default function TemporaryDrawer() {
     >
       <Divider />
       <List>
-        <Icon />
         {links.map((links, index) => (
           <ListItem
             style={{ paddingBottom: "0", padddingTop: "0" }}
@@ -65,7 +61,11 @@ export default function TemporaryDrawer() {
             key={index}
           >
             <i
-              style={{ color: "var(--color", marginRight: "5px" }}
+              style={{
+                color: "var(--color",
+                marginRight: "5px",
+                fontSize: "1.2rem",
+              }}
               className={links.icon}
             ></i>
             <Link className={classes.link} to={links.router}>
@@ -81,7 +81,7 @@ export default function TemporaryDrawer() {
             key={index}
           >
             <Link className={classes.link} to={links.router}>
-              <ListItemText primary={links.title} />
+              <ListItemText className={classes.text} primary={links.title} />
             </Link>
           </ListItem>
         ))}
