@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { textContent } from "../../Data/Data";
 import MenuContentComponent from "../../MenuContentComponent/MenuContentComponent";
 import { AppContext } from "../../Context/Context";
+import Header from "../Applåder/Header";
 
 function Utbildning() {
   /* Getting text for this page, setting right heading */
@@ -19,9 +20,10 @@ function Utbildning() {
   };
 
   return (
-    <div>
+    <>
+      <Header text="Utbildning & Föreläsningar" />
       <MenuContentComponent saveText={saveText} />
-    </div>
+    </>
   );
 }
 

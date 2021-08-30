@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import { AppContext } from "../Context/Context";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import Header from "../MenuContent/Applåder/Header";
 
 function Home() {
   const { theme, setDefaultHeading } = useContext(AppContext);
@@ -16,6 +17,9 @@ function Home() {
 
   return (
     <div className={styles.wrapper}>
+      {window.location.pathname === "/om" ? (
+        <Header text="Om Mest Kunskap" />
+      ) : null}
       <Grid xs={10} md={11} lg={10} xl={8} container item id={styles.om}>
         {om.map((info, index) => {
           return (

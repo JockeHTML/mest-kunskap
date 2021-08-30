@@ -2,10 +2,10 @@
   display: flex;
   margin: auto;
   justify-content: center;
+  padding: var(--padding6) 0;
 }
 
 .wrapper {
-  padding: var(--padding6) 0;
   background-color: white;
 }
 
@@ -75,12 +75,10 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0 !important;
+    padding: var(--padding4) 0 5.5rem 0;
     text-align: center;
   }
-  .wrapper {
-    padding: var(--padding4) 0 5.5rem 0;
-  }
+
   .image img {
     height: 250px;
     border-radius: 4px;

@@ -1,28 +1,31 @@
-import React, { useEffect, useContext } from 'react';
-import {textContent} from "../../Data/Data";
+import React, { useEffect, useContext } from "react";
+import { textContent } from "../../Data/Data";
 import MenuContentComponent from "../../MenuContentComponent/MenuContentComponent";
 import { AppContext } from "../../Context/Context";
+import Header from "./Header";
 
-function Utbildning () {
+function Utbildning() {
+  /* Getting text for this page, setting right heading */
 
-    /* Getting text for this page, setting right heading */
+  const { setDefaultHeading, saveText, setSaveText } = useContext(AppContext);
+  /* const { saveText, setSaveText } = useContext(TextContext); */
 
-    const { setDefaultHeading, saveText, setSaveText } = useContext(AppContext);
-    /* const { saveText, setSaveText } = useContext(TextContext); */
+  useEffect(() => {
+    setDefaultHeading("Mest Kunskap");
+    getText();
+  });
 
-    useEffect(() => {
-        setDefaultHeading("Mest Kunskap");
-        getText();
-    });   
+  /* getting the right data from context file then setting the right state with the useState hook */
+  const getText = () => {
+    setSaveText(textContent[0].Applåder);
+  };
 
-    /* getting the right data from context file then setting the right state with the useState hook */
-    const getText = () => {
-        setSaveText(textContent[0].Applåder);
-    }
-
-    return (
-        <MenuContentComponent saveText={saveText}/>
-    );
+  return (
+    <>
+      <Header text="Utbildning & Föreläsningar" />
+      <MenuContentComponent saveText={saveText} />
+    </>
+  );
 }
 
 export default Utbildning;

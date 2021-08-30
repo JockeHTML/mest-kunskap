@@ -3,6 +3,7 @@ import { textContent } from "../../Data/Data";
 import MenuContentComponent from "../../MenuContentComponent/MenuContentComponent";
 import { AppContext } from "../../Context/Context";
 import ForWhoProducts from "../../ForWho/ForWhoProducts";
+import Header from "../Applåder/Header";
 
 function Utbildning() {
   const { setDefaultHeading, saveText, setSaveText } = useContext(AppContext);
@@ -20,6 +21,7 @@ function Utbildning() {
 
   return (
     <>
+      <Header text="Utbildning & Föreläsningar" />
       <div style={{ marginBottom: "-6rem" }}>
         <MenuContentComponent saveText={saveText} />
       </div>
