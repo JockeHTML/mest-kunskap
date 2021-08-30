@@ -12,7 +12,6 @@ import Hälsa from "./Components/MenuContent/Hälsa/Hälsa";
 import Marknadsföring from "./Components/MenuContent/Marknadsföring/Marknadsföring";
 import Enkät from "./Components/MenuContent/Enkät/Enkät";
 import Starta from "./Components/MenuContent/Starta/Starta";
-import Hamburger from "./Components/Nav/Hamburger";
 import { AppProvider } from "./Components/Context/Context";
 
 import { Switch, Route } from "react-router-dom";
@@ -22,7 +21,6 @@ function App() {
   return (
     <AppProvider>
       <div className={styles.App}>
-        <Hamburger />
         <Nav de />
         <Switch>
           <Route path="/om">

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 }
 
 nav {
@@ -136,12 +136,17 @@ nav {
   .title h1 {
     font-size: 1.4rem;
   }
+  .title {
+    justify-content: start;
+    padding: 1rem 1rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-  .menu a {
-    font-size: 1.1rem;
+  .menu {
+    display: none;
   }
+
   .title h1 {
     font-size: 1.8rem;
   }

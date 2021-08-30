@@ -6,6 +6,7 @@ import { AppContext } from "../Context/Context";
 
 import { Link } from "react-router-dom";
 import Icon from "./Icon";
+import TemporaryDrawer from "./TemporaryDrawer";
 
 function Nav() {
   /*const [scroll, setScroll] = useState(false);
@@ -39,7 +40,7 @@ function Nav() {
     <nav>
       <Grid container item xs={11} md={11} lg={10} xl={8} id={styles.header}>
         <Icon defaultHeading={defaultHeading} />
-
+        <TemporaryDrawer />
         <div className={styles.links}>
           <div className={styles.menu}>
             <ul>
