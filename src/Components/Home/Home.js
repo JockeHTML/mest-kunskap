@@ -30,7 +30,7 @@ function Home() {
                   xs={12}
                   md={12}
                   lg={10}
-                  xl={5}
+                  xl={6}
                   item
                   className={styles.content}
                 >
