@@ -36,13 +36,19 @@ function Home() {
                 >
                   <div className={styles.title}>
                     <Typography
-                      style={{ fontFamily: "DM sans" }}
+                      style={{ fontFamily: "DM sans", color: "var(--dark)" }}
                       gutterBottom={true}
                       variant="h2"
                     >
                       {home.text_1}
                     </Typography>
-                    <Typography style={{ fontFamily: "DM sans" }} variant="h5">
+                    <Typography
+                      style={{
+                        fontFamily: "DM sans",
+                        color: "var(--lightdark)",
+                      }}
+                      variant="h5"
+                    >
                       {home.text_2}
                     </Typography>
                   </div>

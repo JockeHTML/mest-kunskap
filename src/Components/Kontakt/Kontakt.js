@@ -28,15 +28,14 @@ function Kontakt() {
               <h4>Här når du mig</h4>
               <Typography
                 style={{ fontFamily: "DM sans" }}
-                color="inherit"
                 variant="h3"
+                gutterBottom={true}
               >
-                Lorem ipsum dolor dolor amet dolo?
+                Kontakta mig via e-post eller slå mig en signal
               </Typography>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                inventore consequatur voluptate sint numquam, itaque delectus!
-                Tenetur quod sit eveniet.
+                För enklast hantering fyller du i e-post formuläret så
+                återkommer jag så fort som möjligt.
               </p>
             </div>
             {kontaker.map((kontakt, index) => {
@@ -59,44 +58,43 @@ function Kontakt() {
             className={styles.formWrapper}
           >
             <form autoComplete="off" className={styles.form}>
-              <div className={styles.formHeading}>
-                <Typography
-                  style={{ fontFamily: "DM sans" }}
-                  variant="h5"
-                  gutterBottom={true}
-                >
-                  Fyll i formuläret, så återkommer jag så fort som möjligt.
-                </Typography>
-              </div>
+              <div className={styles.formHeading}></div>
 
               <div className={cx(styles.input, styles.name)}>
+                <label>Namn</label>
                 <input
                   autoComplete="off"
-                  placeholder="Namn"
+                  input="Namn"
                   type="text"
                   name="name"
                 />
               </div>
               <div className={cx(styles.input, styles.email)}>
+                <label>E-post</label>
+
                 <input
                   autoComplete="off"
-                  placeholder="E-post"
+                  input="E-post"
                   type="text"
                   name="email"
                 />
               </div>
               <div className={cx(styles.input, styles.subject)}>
+                <label>Ämne</label>
+
                 <input
                   autoComplete="off"
-                  placeholder="Ämne"
+                  input="Ämne"
                   type="text"
                   name="subject"
                 />
               </div>
               <div className={cx(styles.input, styles.message)}>
+                <label>Meddelande</label>
+
                 <textarea
                   autoComplete="off"
-                  placeholder="Meddelande"
+                  input="Meddelande"
                   type="text"
                   name="message"
                 />

@@ -12,7 +12,7 @@ const Card = (props) => {
     <div data-aos="fade-up" className={styles.card}>
       <img src={props.src} alt={props.title} />
       <div className={styles.info}>
-        <h3>{props.title}</h3>
+        <h3 style={{ color: "var(--lightdark)" }}>{props.title}</h3>
         <p>{props.text.substring(0, 90)}...</p>
         {props.routerName ? (
           <Link to={props.router}>

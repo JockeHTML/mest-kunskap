@@ -40,6 +40,10 @@
   margin-left: 2rem;
 }
 
+.item p {
+  color: black;
+}
+
 .formWrapper {
   align-items: flex-end;
   display: flex;
@@ -64,12 +68,20 @@
   color: black;
 }
 
+.input label {
+  color: black;
+}
+
 .input input {
-  border: none;
+  border-bottom: 1px solid #f9fbfd;
   outline: none;
-  background-color: #f9fbfd;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  /*background-color: #f9fbfd;*/
+  background-color: white;
   text-decoration: none;
-  margin: 5px 0 !important;
+  margin: 5px 0 10px 0 !important;
   letter-spacing: 1px;
   line-height: 45px;
   width: 100%;
@@ -77,8 +89,12 @@
 }
 
 .message textarea {
-  border: none;
-  background-color: #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: white;
   outline: none;
   text-decoration: none;
   height: 150px;
